@@ -1,15 +1,9 @@
 package com.acrylic.cookieclicker.cookiegenerators
 
-import com.acrylic.cookieclicker.users.CookieUser
+import com.acrylic.cookieclicker.images.DisplayIcon
 
-interface CookieGenerator {
+interface CookieGenerator : DisplayIcon {
 
-    var quantity: Long
-
-    var production: Double
-
-    fun produce(user: CookieUser) {
-        user.cookies += (quantity * production)
-    }
+    val productionPerSecond: Double
 
 }
