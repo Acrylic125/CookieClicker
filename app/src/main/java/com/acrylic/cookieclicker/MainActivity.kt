@@ -11,10 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         findViewById<Button>(R.id.credits).setOnClickListener {
-            val g = Intent(this,CreditsActivity::class.java)
-            startActivity(g)
+            val int = Intent(this,CreditsActivity::class.java)
+            startActivity(int)
         }
     }
 }

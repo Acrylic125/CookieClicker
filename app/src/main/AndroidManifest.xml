@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CookieClicker">
         <activity
+            android:name=".Test"
+            android:label="@string/title_activity_test"
+            android:theme="@style/Theme.CookieClicker.NoActionBar"></activity>
+        <activity
+            android:name=".Credits"
+            android:label="@string/title_activity_credits"
+            android:theme="@style/Theme.CookieClicker.NoActionBar" />
+        <activity
             android:name=".credits.CreditsActivity"
             android:label="@string/title_activity_credits"
-            android:theme="@style/Theme.CookieClicker.NoActionBar"></activity>
+            android:theme="@style/Theme.CookieClicker.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
